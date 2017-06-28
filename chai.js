@@ -9904,7 +9904,7 @@ function isPrimitive(value) {
  */
 var getPrototypeOfExists = typeof Object.getPrototypeOf === 'function';
 var promiseExists = typeof Promise === 'function';
-var globalObject = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : self; // eslint-disable-line
+var globalObject = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : {}; // eslint-disable-line
 var isDom = 'location' in globalObject && 'document' in globalObject;
 var htmlElementExists = typeof HTMLElement !== 'undefined';
 var isArrayExists = typeof Array.isArray === 'function';
@@ -10616,7 +10616,7 @@ module.exports = {
  * MIT Licensed
  */
 var promiseExists = typeof Promise === 'function';
-var globalObject = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : self; // eslint-disable-line
+var globalObject = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : {}; // eslint-disable-line
 var isDom = 'location' in globalObject && 'document' in globalObject;
 var symbolExists = typeof Symbol !== 'undefined';
 var mapExists = typeof Map !== 'undefined';
